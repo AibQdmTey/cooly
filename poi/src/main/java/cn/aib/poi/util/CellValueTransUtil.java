@@ -7,6 +7,7 @@
 package cn.aib.poi.util;
 
 
+import org.apache.logging.log4j.util.Strings;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 
@@ -16,7 +17,6 @@ import org.apache.poi.ss.usermodel.CellType;
  * Created by shiqi on 2018/5/21.
  */
 public class CellValueTransUtil {
-
     /**
      * 获取单元格内容的string
      * @param cell 单元格
@@ -33,11 +33,11 @@ public class CellValueTransUtil {
             return String.valueOf(cell.getNumericCellValue());
         case FORMULA:
             return cell.getCellFormula();
+        case BLANK:
+            return Strings.EMPTY;
         default:
             throw new IllegalArgumentException("[CellValueTransUtil-retrieveValueString]:" +
                     "不支持当前类型 - " + cellTypeEnum);
         }
     }
-
-
 }

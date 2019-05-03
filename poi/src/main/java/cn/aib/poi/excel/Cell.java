@@ -12,4 +12,5 @@ package cn.aib.poi.excel;
  * Created by shiqi on 2019/5/4.
  */
 public interface Cell {
+    boolean isMatchIndex(final int rowIndex, final int columnIndex);
 }

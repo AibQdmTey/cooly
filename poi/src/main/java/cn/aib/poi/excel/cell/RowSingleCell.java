@@ -19,8 +19,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class RowSingleCell extends CellAbs {
     // string 值
-    public RowSingleCell(final int rStart, final int rEnd, final int cStart,
+    public RowSingleCell(final int rowStart, final int columnStart, final int columnEnd,
             final String value) {
-        super(rStart, rEnd, cStart, cStart + 1, new StringCellUnit(value));
+        super(rowStart, rowStart + 1, columnStart, columnEnd, new StringCellUnit(value));
     }
 }

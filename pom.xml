@@ -66,6 +66,11 @@
                 <artifactId>core</artifactId>
                 <version>${system.version}</version>
             </dependency>
+            <dependency>
+                <groupId>cn.aib</groupId>
+                <artifactId>poi</artifactId>
+                <version>${system.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

@@ -24,6 +24,10 @@
             <groupId>cn.aib</groupId>
             <artifactId>core</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.aib</groupId>
+            <artifactId>poi</artifactId>
+        </dependency>
         <!-- modules dependencies : end -->
 
         <!-- spring boot starter : start -->

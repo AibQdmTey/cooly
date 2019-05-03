@@ -20,20 +20,26 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public abstract class CellAbs implements Cell {
     // 行信息
-    private int rStart;
-    private int rEnd;
+    private int rowStart;
+    private int rowEnd;
     // 列信息
-    private int cStart;
-    private int cEnd;
+    private int columnStart;
+    private int columnEnd;
     //
     private CellUnit cellUnit;
 
-    public CellAbs(final int rStart, final int rEnd, final int cStart, final int cEnd,
+    public CellAbs(final int rowStart, final int rowEnd, final int columnStart, final int columnEnd,
             final CellUnit cellUnit) {
-        this.rStart = rStart;
-        this.rEnd = rEnd;
-        this.cStart = cStart;
-        this.cEnd = cEnd;
+        this.rowStart = rowStart;
+        this.rowEnd = rowEnd;
+        this.columnStart = columnStart;
+        this.columnEnd = columnEnd;
         this.cellUnit = cellUnit;
+    }
+
+    @Override
+    public boolean isMatchIndex(final int rowIndex, final int columnIndex) {
+        return (rowStart <= rowIndex && rowIndex < rowEnd) &&
+                (columnStart <= columnIndex && columnIndex < columnEnd);
     }
 }

@@ -26,6 +26,10 @@
         <!-- modules dependencies : end -->
 
         <!-- spring boot starter : start -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
         <!-- spring boot starter : end -->
 
         <!-- other starter : start-->
