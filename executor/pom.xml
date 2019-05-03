@@ -23,7 +23,6 @@
         <dependency>
             <groupId>cn.aib</groupId>
             <artifactId>core</artifactId>
-            <version>${system.version}</version>
         </dependency>
         <!-- modules dependencies : end -->
 

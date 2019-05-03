@@ -24,6 +24,7 @@
     <modules>
         <module>core</module>
         <module>executor</module>
+        <module>poi</module>
     </modules>
 
     <properties>
@@ -60,6 +61,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>cn.aib</groupId>
+                <artifactId>core</artifactId>
+                <version>${system.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
