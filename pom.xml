@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ pom.xml
+  ~ Copyright 2019 Qunhe Tech, all rights reserved.
+  ~ Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.aib</groupId>
+    <artifactId>cooly</artifactId>
+    <packaging>pom</packaging>
+
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>core</module>
+        <module>executor</module>
+    </modules>
+
+    <properties>
+        <!-- 环境相关 : start -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <!-- 环境相关 : end -->
+
+        <!-- 系统相关 : start -->
+        <system.version>1.0-SNAPSHOT</system.version>
+        <!-- 系统相关 : end -->
+
+        <!-- 模块相关 ：start -->
+        <!-- poi -->
+        <poi.poi.version>3.17</poi.poi.version>
+        <!-- jsoup -->
+        <jsoup.jsoup.version>1.11.2</jsoup.jsoup.version>
+        <!-- 模块相关 ：end -->
+
+        <!-- 其他依赖 : start -->
+        <!-- apache -->
+        <apache.collections4.version>4.1</apache.collections4.version>
+        <apache.commons.lang.version>3.7</apache.commons.lang.version>
+        <!-- google -->
+        <google.guava.version>23.0</google.guava.version>
+        <!-- json -->
+        <jackson.version>2.9.5</jackson.version>
+        <!-- other -->
+        <jodatime.version>2.9.5</jodatime.version>
+        <lombok.version>1.16.10</lombok.version>
+        <!-- 其他依赖 : end -->
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
